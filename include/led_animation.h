@@ -36,10 +36,10 @@ void led_animation_triggered()
   case 0:
   case 2:
   case 4:
-    set_led_color(MAX_LED_RED, 0, 0);
+    set_led_color(0, 0, 0);
     break;
   default:
-    set_led_color(0, 0, 0);
+    set_led_color(MAX_LED_RED, 0, 0);
     break;
   }
 
