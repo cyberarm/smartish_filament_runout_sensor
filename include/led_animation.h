@@ -4,13 +4,13 @@
 #define LED_ANIMATION_TRIGGERED 1
 #define LED_ANIMATION_ISSUE 2
 
-typedef struct LedAnimation
-{
-  int frames[8][3];    // max of 8 frames, with RGB values.
-  int frame_count = 0; // number of frames to "animate"
-  int frame_index = 0;
-  int delay = 250; // ms
-} LedAnimation;
+// typedef struct LedAnimation
+// {
+//   int frames[8][3];    // max of 8 frames, with RGB values.
+//   int frame_count = 0; // number of frames to "animate"
+//   int frame_index = 0;
+//   int delay = 250; // ms
+// } LedAnimation;
 
 uint8_t led_animation = LED_ANIMATION_OKAY;
 uint8_t led_animation_frame = 0;

@@ -22,7 +22,7 @@ void setup()
 /// MAIN LOOP ///
 void loop()
 {
-  bool v = read_sensor();
+  bool v = read_sensor(DELAY_MS);
   sensor_history[sensor_history_index] = v;
   sensor_history_index++;
   sensor_history_index %= SENSOR_HISTORY_SIZE;
